@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+
+  es6-starter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+    ports:
+      - '2000:3000'
+    command: npm run dev

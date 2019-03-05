@@ -1,0 +1,4 @@
+{
+  "presets": ["env"],
+  "plugins": ["syntax-dynamic-import", "babel-plugin-transform-class-properties", "transform-decorators"]
+}
